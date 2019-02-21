@@ -1,15 +1,16 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{layout/default}">>
-
+      layout:decorate="~{layout/default}">
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title>About</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 <div layout:fragment="content">
-    <p th:text="'Hello, ' + ${name} + '!'"/>
+    <p th:text="'Education:' + ${education}"/>
+    <p th:text="'Job:' + ${job}"/>
+    <p th:text="'Projects:' + ${projects}"/>
 </div>
 </body>
 </html>
